@@ -50,7 +50,7 @@ This library does not require third party dependencies
       patch(updater): lets you update the cached value directly (e.g., for optimistic UI)
    ```
 4. Example for template:
-5. 
+ 
 ```html
      @if (result.loading(); as loading) {
        <p>Loading... {{ loading }}</p>
@@ -76,15 +76,15 @@ This library does not require third party dependencies
 
  ```bash
   // 1) Edit. After user edits their name in a form:
-   userResult.patch(user => ({
-     ...user,
-     name: 'Alex Updated'
-   }));
+       userResult.patch(user => ({
+         ...user,
+         name: 'Alex Updated'
+       }));
 
  // 2) Delete. In your component:
-  deleteTodo(id: number) {
-   todosResult.patch(todos => todos.filter(todo => todo.id !== id));
- }
+        deleteTodo(id: number) {
+        todosResult.patch(todos => todos.filter(todo => todo.id !== id));
+       }
 ```
 
 ## 💸 Support project

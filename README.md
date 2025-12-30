@@ -51,7 +51,7 @@ This library does not require third party dependencies
    ```
 4. Example for template:
 
-   ```
+   ```html
 @if (result.loading(); as loading) {
   <p>Loading... {{ loading }}</p>
 }
@@ -74,18 +74,16 @@ This library does not require third party dependencies
 
 5. Example for patch method:
 
-   ```
-   // 1) Edit. After user edits their name in a form:
-  userResult.patch(user => ({
-    ...user,
-    name: 'Alex Updated'
-  }));
-   
-   // 2) Delete. In your component:
+   ```bash
+// 1) Edit. After user edits their name in a form:
+userResult.patch(user => ({
+  ...user,
+  name: 'Alex Updated'
+}));
+
+// 2) Delete. In your component:
 deleteTodo(id: number) {
-  todosResult.patch(todos => {
-    return todos.filter(todo => todo.id !== id);
-  });
+  todosResult.patch(todos => todos.filter(todo => todo.id !== id));
 }
    ```
 

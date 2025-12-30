@@ -36,13 +36,13 @@ This library does not require third party dependencies
 3. Inject NgxApiCacheService in any standalone component or service:
 
    ```bash
+   
      const apiCache = inject(NgxApiCacheService);
      const result: CacheResult<User> = apiCache.get('/api/user');
-     
      if you want, you can also add destroyRef: apiCache.get('/api/user', destroyRef);
-     
+   
+
      The returned result object gives you:
-     
       data: a readonly signal with the response (or null)
       loading: a readonly signal indicating if a request is in progress
       error: a readonly signal with the error (or null)
@@ -52,7 +52,7 @@ This library does not require third party dependencies
 4. Example for template:
  
 ```html
-     @if (result.loading(); as loading) {
+    @if (result.loading(); as loading) {
        <p>Loading... {{ loading }}</p>
     }
 

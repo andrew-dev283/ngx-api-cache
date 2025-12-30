@@ -65,8 +65,8 @@ This library does not require third party dependencies
 
     @if (result.data(); as data) {
       <div class="content">
-        <h2>{{ data.title }}</h2>
-        <p>{{ data.description }}</p>
+        <h2>{{ data.name }}</h2>
+        <p>{{ data.position }}</p>
         <button (click)="result.refresh()">Refresh</button>
       </div>
 }

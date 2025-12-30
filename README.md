@@ -51,7 +51,7 @@ This library does not require third party dependencies
    ```
 4. Example for template:
 
-   ```html
+   ```
 @if (result.loading(); as loading) {
   <p>Loading... {{ loading }}</p>
 }

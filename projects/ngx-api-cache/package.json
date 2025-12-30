@@ -1,6 +1,6 @@
 {
   "name": "ngx-api-cache",
-  "version": "20.0.6",
+  "version": "20.0.0",
   "peerDependencies": {
     "@angular/common": "^20.3.1",
     "@angular/core": "^20.3.1"

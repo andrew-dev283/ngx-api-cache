@@ -51,7 +51,7 @@ This library does not require third party dependencies
    ```
 4. Example for template:
 
-   ```bash
+   ```html
 @if (result.loading(); as loading) {
   <p>Loading... {{ loading }}</p>
 }
@@ -74,7 +74,7 @@ This library does not require third party dependencies
 
 5. Example for patch method:
 
-   ```bash
+   ```
    // 1) Edit. After user edits their name in a form:
   userResult.patch(user => ({
     ...user,

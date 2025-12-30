@@ -1,0 +1,30 @@
+{
+  "name": "ngx-api-cache",
+  "version": "20.0.6",
+  "peerDependencies": {
+    "@angular/common": "^20.3.1",
+    "@angular/core": "^20.3.1"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "funding": [
+    {
+      "type": "crypto",
+      "url": "https://andrew-dev283.github.io/andrew-dev.github.io/"
+    },
+    {
+      "type": "boosty",
+      "url": "https://boosty.to/hq_dev"
+    }
+  ],
+  "homepage": "https://github.com/andrew-dev283/ngx-api-cache",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrew-dev283/ngx-api-cache.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}

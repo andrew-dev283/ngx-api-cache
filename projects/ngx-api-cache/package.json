@@ -1,6 +1,6 @@
 {
   "name": "ngx-api-cache",
-  "version": "20.0.2",
+  "version": "20.0.3",
   "peerDependencies": {
     "@angular/common": "^20.3.1",
     "@angular/core": "^20.3.1"
@@ -20,6 +20,8 @@
     }
   ],
   "homepage": "https://github.com/andrew-dev283/ngx-api-cache",
+  "license": "MIT",
+  "keywords": ["angular", "api", "cache"],
   "repository": {
     "type": "git",
     "url": "https://github.com/andrew-dev283/ngx-api-cache.git"

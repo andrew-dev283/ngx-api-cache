@@ -87,10 +87,14 @@ This library does not require third party dependencies
        }
 ```
 
+## Keywords
+angular, api, cache
+
+
 ## 💸 Support project
 
 [![Cryptodonat](https://img.shields.io/badge/Donate-Crypto-green?logo=bitcoin)](https://andrew-dev283.github.io/andrew-dev.github.io/)
 
-OR 
+OR
 
 https://boosty.to/hq_dev

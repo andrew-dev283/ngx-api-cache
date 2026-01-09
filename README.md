@@ -8,6 +8,10 @@ This is a very lightweight library for api-cache.
 
 This library does not require third party dependencies
 
+## DEMO
+
+[![Demo](https://img.shields.io/badge/Demo-Vercel-000000?logo=vercel&logoColor=white)](https://ngx-api-cache.vercel.app)
+
 ### USAGE
 
 1. Install
@@ -87,10 +91,14 @@ This library does not require third party dependencies
        }
 ```
 
+## Keywords
+angular, api, cache
+
+
 ## 💸 Support project
 
 [![Cryptodonat](https://img.shields.io/badge/Donate-Crypto-green?logo=bitcoin)](https://andrew-dev283.github.io/andrew-dev.github.io/)
 
-OR 
+OR
 
 https://boosty.to/hq_dev

@@ -1,0 +1,64 @@
+<div class="container">
+  <h1>ngx-api-cache</h1>
+  <p>A lightweight, dependency-free API caching solution for Angular 20+ with Signals.</p>
+
+  <h2>✨ Features</h2>
+  <ul>
+    <li>✅ Automatic caching by URL</li>
+    <li>✅ Signals for <code>data</code>, <code>loading</code>, <code>error</code></li>
+    <li>✅ Manual <code>refresh()</code> and <code>patch()</code></li>
+    <li>✅ No third-party dependencies</li>
+  </ul>
+
+  <!-- User Example -->
+  <div class="card">
+    <h3>User Profile</h3>
+    @if (userResult.loading()) {
+      <p class="loading">Loading profile...</p>
+    }
+    @if (userResult.error(); as error) {
+      <div class="error">
+        <p>Failed to load user.</p>
+        <button (click)="userResult.refresh()">Retry</button>
+      </div>
+    }
+    @if (userResult.data(); as user) {
+      <div class="content">
+        <h4>{{ user.name }}</h4>
+        <p>{{ user.position }}</p>
+        <button (click)="userResult.refresh()">Refresh</button>
+        <button (click)="updateUserName()">Patch Name → "Alex Updated"</button>
+      </div>
+    }
+  </div>
+
+  <!-- Todos Example -->
+  <div class="card">
+    <h3>Todo List</h3>
+    @if (todosResult.loading()) {
+      <p class="loading">Loading todos...</p>
+    }
+    @if (todosResult.data(); as todos) {
+      <div class="content">
+        <ul>
+          @for (todo of todos; track todo.id) {
+            <li>{{ todo.title }}</li>
+          }
+        </ul>
+        <button (click)="todosResult.refresh()">Refresh</button>
+        <button (click)="deleteFirstTodo()">Delete First Todo</button>
+      </div>
+    }
+  </div>
+
+  <h2>🚀 Usage</h2>
+  <pre [innerHTML]="usageExample"></pre>
+
+  <h2>🔗 Links</h2>
+  <ul>
+    <li><a href="https://github.com/andrew-dev283/ngx-api-cache" target="_blank">GitHub</a></li>
+    <li><a href="https://www.npmjs.com/package/ngx-api-cache" target="_blank">npm</a></li>
+    <li><a href="https://boosty.to/hq_dev" target="_blank">Support on Boosty</a></li>
+    <li><a href="https://andrew-dev283.github.io/andrew-dev.github.io/" target="_blank">Donate via Crypto</a></li>
+  </ul>
+</div>

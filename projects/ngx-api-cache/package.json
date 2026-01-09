@@ -19,7 +19,7 @@
       "url": "https://boosty.to/hq_dev"
     }
   ],
-  "homepage": "https://github.com/andrew-dev283/ngx-api-cache",
+  "homepage": "https://ngx-api-cache.vercel.app",
   "license": "MIT",
   "keywords": ["angular", "api", "cache"],
   "repository": {

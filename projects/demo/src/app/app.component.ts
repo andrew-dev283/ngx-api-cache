@@ -19,7 +19,7 @@ interface User {
     button { margin: 0.5rem 0.25rem; padding: 0.4rem 0.8rem; }
   `]
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   private apiCache = inject(NgxApiCacheService);
 
   userResult: CacheResult<User> = this.apiCache.get('/api/user');
@@ -28,20 +28,13 @@ export class AppComponent implements OnInit {
   usageExample = `
 // In component:
     private apiCache = inject(NgxApiCacheService);
-    protected userResult: CacheResult<User> = this.apiCache.get('/api/user');
+    protected userResult: CacheResult&lt;User&gt; = this.apiCache.get('/api/user');
 
 // In template:
     @if (userResult.data(); as user) {
      &lt;p>{{ user.name }}&lt;/p>
     }
 `.trim();
-
-  ngOnInit() {
-    setTimeout(() => {
-      console.log(this.userResult.loading());
-    }, 5000)
-
-  }
 
   updateUserName() {
     this.userResult.patch(user => ({ ...user, name: 'Alex Updated' }));

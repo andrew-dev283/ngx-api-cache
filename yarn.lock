@@ -3594,10 +3594,10 @@ ng-packagr@^20.3.0:
   optionalDependencies:
     rollup "^4.24.0"
 
-ngx-api-cache@^20.0.4:
-  version "20.0.4"
-  resolved "https://registry.yarnpkg.com/ngx-api-cache/-/ngx-api-cache-20.0.4.tgz#a36c270ae74b4b73c2b17276ff0c2a42986f51d5"
-  integrity sha512-TOs84KVSivAoHGZlPwOk39J4XpO87kmu/U7fZcCH7vG3d30QzwvjB/dCqqRPGJIOezgtHRBoYWzl+z0knpM8LA==
+ngx-api-cache@^20.0.5:
+  version "20.0.5"
+  resolved "https://registry.yarnpkg.com/ngx-api-cache/-/ngx-api-cache-20.0.5.tgz#2daee9fe5eeffd8b8899cb032d60a2fcb7af9efc"
+  integrity sha512-ozfEeDcIYc8z6DoVooXyLk2zVnlToGQB32TS5NEBpCqifwHBqLe2eMvkNXkr8ex3cCooABY5CsD9S6F3W+qIGw==
   dependencies:
     tslib "^2.3.0"
 
